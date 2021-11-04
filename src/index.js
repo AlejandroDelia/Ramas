@@ -4,9 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import Card from './components/Card'
+import Menu from './components/Menu'
+import 'bootstrap/dist/css/bootstrap.css'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Menu />
+    <Card 
+      title="Hola Ale como estas"
+      parrafo="Probando de hacer un componente en react :), estoy feliz!!" />
+    {/* <App /> */}
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
